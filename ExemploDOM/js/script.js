@@ -53,9 +53,6 @@ botaoDesativar.addEventListener("click", function () {
 // Clicar na peça ativa para mostrar explicação sobre DOM
 peca.addEventListener("click", function () {
   if (pecaAtivada === true) {
-    iconePeca.innerText = "🌐";
-    tituloPeca.innerText = "O que é DOM?";
-    textoPeca.innerText =
-      "DOM significa Document Object Model. É a representação estruturada de um documento HTML como um objeto, permitindo que o JavaScript acesse e manipule elementos da página dinamicamente.";
+    window.location.href = 'PaginaDOM/index.html';
   }
 });
