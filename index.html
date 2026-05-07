@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Define o padrão de caracteres da página -->
+    <meta charset="UTF-8" />
+
+    <!-- Deixa a página adaptável para celular e computador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Quebra-Cabeça Interativo</title>
+
+    <!-- Conecta o arquivo CSS ao HTML -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Área principal da página -->
+    <main class="container">
+      <!-- Cabeçalho da página -->
+      <section class="hero">
+        <p class="tag">Programação Website I</p>
+
+        <h1>Quebra-Cabeça Interativo</h1>
+
+        <p class="descricao">
+          Nesta aula vamos criar a primeira peça interativa usando HTML, CSS e
+          JavaScript.
+        </p>
+      </section>
+
+      <!-- Área onde ficará o projeto -->
+      <section class="area-projeto">
+        <!-- Card com informações e contador -->
+        <div class="card-info">
+          <h2>Quebra-cabeça Dinâmico</h2>
+
+          <p>Clique diretamente nas peças para ativá-las e veja o contador atualizar em tempo real.</p>
+
+          <div class="status-box">
+            <span>Peças ativas:</span>
+            <strong id="contadorAtivas">0</strong>
+          </div>
+
+          <p id="mensagemFinal" class="mensagem-final"></p>
+
+          <button id="btnResetar" class="btn-resetar">🔄 Resetar</button>
+        </div>
+
+        <!-- Grade de peças do quebra-cabeça -->
+        <div class="pecas-grid">
+          <div class="peca bloqueada verde" data-icone="🧩" data-titulo="Peça 1: DOM Inicial" data-texto="Revele a primeira lição." data-link="PaginaDOM/index.html">
+            <div class="peca-conteudo">
+              <span class="icone">🔒</span>
+              <h3>Peça Bloqueada</h3>
+              <p>Clique para ativar</p>
+            </div>
+          </div>
+
+          <div class="peca bloqueada roxa" data-icone="✨" data-titulo="Peça 2: Estilo" data-texto="Veja como as classes mudam o visual.">
+            <div class="peca-conteudo">
+              <span class="icone">🔒</span>
+              <h3>Peça Bloqueada</h3>
+              <p>Clique para ativar</p>
+            </div>
+          </div>
+
+          <div class="peca bloqueada azul" data-icone="🚀" data-titulo="Peça 3: Próxima Aula" data-texto="Abra a página da próxima aula." data-link="PaginaDOM/index.html">
+            <div class="peca-conteudo">
+              <span class="icone">🔒</span>
+              <h3>Peça Bloqueada</h3>
+              <p>Clique para ativar</p>
+            </div>
+          </div>
+
+          <div class="peca bloqueada amarela" data-icone="⚡" data-titulo="Peça 4: Lógica" data-texto="Domine a lógica de eventos.">
+            <div class="peca-conteudo">
+              <span class="icone">🔒</span>
+              <h3>Peça Bloqueada</h3>
+              <p>Clique para ativar</p>
+            </div>
+          </div>
+
+          <div class="peca bloqueada rosa" data-icone="💡" data-titulo="Peça 5: Ideias" data-texto="Crie interações mais criativas.">
+            <div class="peca-conteudo">
+              <span class="icone">🔒</span>
+              <h3>Peça Bloqueada</h3>
+              <p>Clique para ativar</p>
+            </div>
+          </div>
+
+          <div class="peca bloqueada laranja" data-icone="🔥" data-titulo="Peça 6: Energia" data-texto="Sinta a força do JavaScript.">
+            <div class="peca-conteudo">
+              <span class="icone">🔒</span>
+              <h3>Peça Bloqueada</h3>
+              <p>Clique para ativar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Conecta o JavaScript ao HTML -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
